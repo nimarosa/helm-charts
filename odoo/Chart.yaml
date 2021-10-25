@@ -12,7 +12,7 @@ dependencies:
     version: 1.x.x
 description: A suite of web based open source business apps.
 engine: gotpl
-home: https://github.com/bitnami/charts/tree/master/bitnami/odoo
+home: https://github.com/nimarosa/helm-charts/tree/master/odoo
 icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
 keywords:
   - odoo
