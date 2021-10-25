@@ -2,8 +2,6 @@ annotations:
   category: CRM
 apiVersion: v2
 appVersion: 14.0.20211010
-chart-repos:
-  - bitnami=https://charts.bitnami.com/bitnami
 dependencies:
   - condition: postgresql.enabled
     name: postgresql
