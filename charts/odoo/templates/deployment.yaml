@@ -114,6 +114,11 @@ spec:
                 secretKeyRef:
                   name: {{ include "odoo.databaseSecretName" . | quote }}
                   key: "postgresql-password"
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "odoo.databaseSecretName" . | quote }}
+                  key: "postgresql-password"
             {{- if and (not .Values.postgresql.enabled) .Values.externalDatabase.create }}
             - name: PGHOST
               value: {{ template "odoo.databaseHost" . }}
