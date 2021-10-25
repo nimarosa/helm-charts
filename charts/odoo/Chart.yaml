@@ -5,10 +5,10 @@ appVersion: 14.0.20211010
 dependencies:
   - condition: postgresql.enabled
     name: postgresql
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://charts.bitnami.com/bitnami/postgresql
     version: 10.x.x
   - name: common
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://charts.bitnami.com/bitnami/common
     version: 1.x.x
 description: A suite of web based open source business apps.
 engine: gotpl
