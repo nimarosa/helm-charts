@@ -146,26 +146,26 @@ spec:
               value: {{ .Values.withoutDemo | quote }}
             {{- end }}
             {{- if .Values.smtpHost }}
-            - name: ODOO_SMTP_HOST
+            - name: SMTP_SERVER
               value: {{ .Values.smtpHost | quote }}
             {{- end }}
             {{- if .Values.smtpPort }}
-            - name: ODOO_SMTP_PORT_NUMBER
+            - name: SMTP_PORT
               value: {{ .Values.smtpPort | quote }}
             {{- end }}
             {{- if .Values.smtpUser }}
-            - name: ODOO_SMTP_USER
+            - name: SMTP_USER
               value: {{ .Values.smtpUser | quote }}
             {{- end }}
             {{- if or .Values.smtpPassword .Values.smtpExistingSecret }}
-            - name: ODOO_SMTP_PASSWORD
+            - name: SMTP_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ template "odoo.smtpSecretName" . }}
                   key: smtp-password
             {{- end }}
             {{- if .Values.smtpProtocol }}
-            - name: ODOO_SMTP_PROTOCOL
+            - name: SMTP_SSL
               value: {{ .Values.smtpProtocol | quote }}
             {{- end }}
             {{- if .Values.extraEnvVars }}
