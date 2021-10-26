@@ -16,9 +16,8 @@ To install the <chart-name> chart:
 
     helm install my-<chart-name> nimarosa/<chart-name>
   
-  Example (installing odoo chart): 
+    Example (installing odoo chart): 
       helm install my-<chart-name> nimarosa/odoo
-
 
 To uninstall the chart:
 
