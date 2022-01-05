@@ -4,6 +4,39 @@ entries:
   - annotations:
       category: CRM
     apiVersion: v2
+    appVersion: 15.0.20211210
+    created: "2022-01-05T12:33:27.697158355Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: A suite of web based open source business apps.
+    digest: 6140c0b3388224d9806f1ada3d2d73fe84a417cb8e3229d83c855a7c09d9c4fb
+    home: https://github.com/bitnami/charts/tree/master/bitnami/odoo
+    icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
+    keywords:
+    - odoo
+    - crm
+    - www
+    - http
+    - web
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: odoo
+    sources:
+    - https://github.com/bitnami/bitnami-docker-odoo
+    - https://www.odoo.com/
+    urls:
+    - https://github.com/nimarosa/helm-charts/releases/download/odoo-20.1.4/odoo-20.1.4.tgz
+    version: 20.1.4
+  - annotations:
+      category: CRM
+    apiVersion: v2
     appVersion: 14.0.20211010
     created: "2021-10-26T13:13:38.101603715Z"
     dependencies:
@@ -133,4 +166,4 @@ entries:
     urls:
     - https://github.com/nimarosa/helm-charts/releases/download/odoo-19.0.12/odoo-19.0.12.tgz
     version: 19.0.12
-generated: "2021-10-26T13:13:38.101631916Z"
+generated: "2022-01-05T12:33:27.697205154Z"
