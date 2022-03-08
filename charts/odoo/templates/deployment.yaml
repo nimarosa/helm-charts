@@ -181,6 +181,8 @@ spec:
           ports:
             - name: http
               containerPort: {{ .Values.containerPort }}
+            - name: longpolling
+              containerPort: {{ .Values.longpollingPort }}
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:
